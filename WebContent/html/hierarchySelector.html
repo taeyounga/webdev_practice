@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Hierarchy Selector</title>
+	<style>
+		/*div 태그 기준 후손/자손 선택자*/
+		/* li태그의 글자색을 파란색으로 바꾸기 */
+		h1 {color:blue;}
+		div h1 {color:green;}
+		div>ul>li {color:gold;}
+		#div_1 h1 {color:red;}
+		#div_1 li {color:cyan;}
+		a {background-color:grey; color:white;}
+		a:hover {background-color:green; color:white;}
+		a:active {background-color:red; color:pink;}
+	</style>
+</head>
+<body>
+	<h1>outside div</h1>
+	<a href="http://www.naver.com">네이버</a>
+	<div>
+		<h1>css3선택자 기본</h1>
+		<h2>기본 선택자</h2>
+		<ul>
+			<li>전체선택자</li>
+			<li>태그선택자</li>
+			<li>아이디 선택자와 클래스 선택자</li>
+		</ul>
+	</div>
+	<div id="div_1">
+		<h1>div1 h1</h1>
+		<ul>
+			<li>d1 - l1</li>
+		</ul>
+	</div>
+</body>
+</html>

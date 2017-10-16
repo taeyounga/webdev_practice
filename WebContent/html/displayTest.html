@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Display Test</title>
+<style>
+	h1 {
+		width:300px;
+		background-color: cyan;
+	}
+	div {
+		width:300px; height:200px;
+		background-color: orange;
+		font-size: 20pt;
+		font-style: italic;
+		font-weight: bold;
+	}
+	span.s1 {
+		background-color: gold;
+		border-radius: 4px;
+		padding:3px;
+	}
+	span.s2 {
+		/* display:block; */
+		display:inline-block;
+		width:200px; height:100px;
+		background-color:red;
+	}
+	span.btn1 {
+		display:inline-block;
+		width:100px;
+		height:40px;
+		background-color: grey;
+		color: white;
+		border:3px solid black;
+		border-radius: 10px;
+		font-size: 16pt;
+		font-weight: bold;
+		text-align:center;
+		line-height: 40px;
+	}
+</style>
+</head>
+<body>
+	<h1>[h1]display 속성: block (글자수에 상관 없이 width = 100%. Default 속성.)</h1>
+	<div>[div]display 속성: block (상동)</div>
+	<hr>
+	<span class="s1">[span1]display 속성: inline</span>
+	<span class="s2">[span2]display 속성: inline</span>
+	<h1>span태그를 이용한 버튼 생성</h1>
+	<a href="http://www.naver.com">
+		<span class="btn1">Click!</span>
+	</a>
+</body>
+</html>

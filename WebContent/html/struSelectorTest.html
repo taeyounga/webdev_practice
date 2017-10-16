@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>구조 선택자</title>
+<style>
+	li:first-child {background-color: red;}
+	li:last-child {background-color: cyan;}
+	li:nth-child(3) {background-color: yellow;}
+	li:nth-child(even) {background-color: gold;}
+	
+	tr:nth-child(odd) {background-color: green;}
+	tr:nth-child(even) {background-color: orange;}
+	tr:last-child td:last-child {background-color: red;}
+</style>
+</head>
+<body>
+	<h1>구조 선택자</h1>
+	<ul>
+		<li>카페</li>
+		<li>메일</li>
+		<li>공지사항</li>
+		<li>게시판</li>
+		<li>멤버십</li>
+	</ul>
+	<hr>
+	<table border="1">
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+		</tr>
+	</table>
+</body>
+</html>
